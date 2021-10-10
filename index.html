@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>date</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="input">
+            <div>
+                <label for="firstPersonBirthday">Choose 1st person birthday date: </label>
+                <input type="date" id="firstPersonBirthday" name="birthday"><br />
+                <label for="firstPersonBirthHour">Choose 1st person birthday hour: </label>
+                <input type="number" min="0" max="23" id="firstPersonBirthHour" name="birthHour"><br />
+                <label for="firstPersonBirthMinute">Choose 1st person birthday minute: </label>
+                <input type="number" min="0" max="59" id="firstPersonBirthMinute" name="birthMinute">
+            </div>
+            <div>
+                <label for="secondPersonBirthday">Choose 2nd person birthday date: </label>
+                <input type="date" id="secondPersonBirthday" name="birthday"><br />
+                <label for="secondPersonBirthHour">Choose 2nd person birthday hour: </label>
+                <input type="number" min="0" max="23" id="secondPersonBirthHour" name="birthHour"><br />
+                <label for="secondPersonBirthMinute">Choose 2nd person birthday minute: </label>
+                <input type="number" min="0" max="59" id="secondPersonBirthMinute" name="birthMinute">
+            </div>
+            <input type="button" value="calculate the difference" id="calculate-button" onclick="calculateBirthdayDifference()">
+        </form>
+        <div id="result"></div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
